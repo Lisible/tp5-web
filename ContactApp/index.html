@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <title>Chococontact</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/style.css">
+        <script src="app.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <h1>Chococontact</h1>
+        </header>
+        <div id="contact-list-wrapper">
+            <h2>Contacts</h2>
+            <button id="add-contact-button" class="round-button">+</button>
+            <ul id="contact-list"></ul>
+        </div>
+
+        <div id="contact-form-wrapper" class="hidden">
+            <button id="form-back-button">&lt;-</button>
+            <form>
+                    <div class="form-entry">
+                        <label for="firstname-input">Prénom</label>
+                        <input type="text" name="firstname-input">
+                    </div>
+                    <div class="form-entry">
+                        <label for="lastname-input">Nom</label>
+                        <input type="text" name="lastname-input">
+                    </div>
+                    <div class="form-entry">
+                        <label for="phonenumber-input">Numéro de téléphone</label>
+                        <input type="text" name="phonenumber-input">
+                    </div>
+                    <div class="form-entry">
+                        <label for="email-input">Adresse email</label>
+                        <input type="text" name="email-input">
+                    </div>
+                    <div class="form-entry">
+                        <label for="home-input">Adresse postale</label>
+                        <input type="text" name="home-input">
+                    </div>
+                    <input type="button" class="round-button" value="OK">
+            </form>
+        </div>
+
+        <div id="contact-details-wrapper" class="hidden">
+            <button id="details-back-button">Retour</button>
+            <ul>
+                <li>Prénom: <span id="details-firstname"></span></li>
+                <li>Nom: <span id="details-lastname"></span></li>
+                <li>Numéro de téléphone: <span id="details-phonenumber"></span></li>
+                <li>Adresse email: <span id="details-email"></span></li>
+                <li>Adresse postale: <span id="details-home"></span></li>
+            </ul>
+        </div>
+    </body>
+</html>
